@@ -27,11 +27,4 @@ The classic Snake Game, built using **WebAssembly**, **JavaScript** and **C++**.
    ```bash
    python -m http.server
 Open your browser and navigate to: http://localhost:8000 and enjoy 😊
-
-3. (Optional) If you make changes to main.cpp, recompile using Emscripten:
-   ```bash
-   emcc main.cpp -o output.js -s WASM=1 \
-   -s EXPORTED_FUNCTIONS="['_resetGame', '_move', '_changeDirection', '_getSnakeLength', '_getSnake', '_getAppleX', '_getAppleY', '_getGameOver']" \
-   -s EXPORTED_RUNTIME_METHODS="['ccall', 'cwrap']"
-
    
